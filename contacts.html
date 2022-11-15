@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Contact Us - the training page for DLK project</title>
+    <meta name="description" content="Contact Us provides a feedback form based on Flexbox technology, also used custom checkboxes.">
+    <meta name="keywords" content="Html, scss, flexbox, feedback form, custom checkboxes">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.min.css?v=1668496580300">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html" class="logo">
+        <svg class="logo__image">
+          <title>Icon: Logo</title>
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="links-wrapper">
+        <nav class="header__nav header__nav--mobile">
+          <button class="header__link menu-button">Menu</button>
+        </nav>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="../../catalog.html" class="header__link">Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li>
+              <a href="../../blog.html" class="header__link">Blog</a>
+            </li>
+            <li>
+              <a href="../../scene.html" class="header__link">Animation</a>
+            </li>
+            <li>
+              <a href="../../svg.html" class="header__link">SVG</a>
+            </li>
+            <li>
+              <a href="../../grid.html" class="header__link">Grid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <svg class="search__icon" width="24" height="24">
+          <title>Icon: Search</title>
+          <use xlink:href="./img/sprite.svg#search"></use>
+        </svg>
+        <a href="../../contacts.html" class="search__contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<header class="header-menu">
+  <div class="header-menu__overlay"></div>
+  <div class="header-menu__dialog">
+    <div class="container">
+      <div class="header-menu__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
+            <title>Icon: Logo</title>
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="close-button header-menu__close">
+          <svg class="close-button__icon" width="16" height="16">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#dark_close"></use>
+          </svg>
+        </button>
+        <div class="search">
+          <svg class="search__icon" width="24" height="24">
+            <title>Icon: Search</title>
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav header__nav--mobile">
+          <li>
+            <a href="../../catalog.html" class="header__link header__link--shift">Catalog</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">About Us</a>
+          </li>
+          <li>
+            <a href="../../blog.html" class="header__link header__link--shift">Blog</a>
+          </li>
+          <li>
+            <a href="../../scene.html" class="header__link header__link--shift">Animation</a>
+          </li>
+          <li>
+            <a href="../../svg.html" class="header__link header__link--shift">SVG</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">Grid</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="../../contacts.html" class="search__contact--mobile">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="title">Contact Us</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./contacts.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts__wrapper">
+            <form action="#" class="form">
+  <div class="form__wrapper">
+    <div>
+      <label for="input-name" class="form__label form__label--margin">Name</label>
+      <input type="text" id="input-name" placeholder="Ivan Ivanov" class="form__input form__name">
+    </div>
+    <div class="form__phone-email">
+      <div class="form__row">
+        <label for="input-phone" class="form__label form__label--margin">Phone</label>
+        <input type="tel" id="input-phone" class="form__input form__phone">
+      </div>
+      <div class="form__row">
+        <label for="input-email" class="form__label form__label--margin">Email</label>
+        <input type="email" id="input-email" class="form__input form__email">
+      </div>
+    </div>
+    <div>
+      <label for="input-message" class="form__label form__label--margin">Message</label>
+      <textarea id="input-message" class="form__input form__message"></textarea>
+    </div>
+    <div class="form__personal">
+      <input type="checkbox" class="form__input checkbox" id="input-personal" checked="checked">
+      <label for="input-personal" class="form__label form__label--mini">By clicking on the button, you consent to the processing of your
+        personal data</label>
+    </div>
+    <button type="submit" class="button">Submit</button>
+
+  </div>
+</form>
+
+            <div class="contacts__block">
+              <p class="info contacts__info">
+                Our support team are on-hand to assist with any issues you are
+                experiencing.
+              </p>
+              <p class="info contacts__info">
+                Please use the form to contact us with your needs. Send us a
+                message and we'll respond as soon as possible.
+              </p>
+              <p class="contacts__call">An expert is waiting to help you!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <section class="footer__section">
+        <h5 class="footer__title">Navigation</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li>
+              <a href="#" class="footer__link">Design Services</a>
+            </li>
+            <li><a href="#" class="footer__link">Featured On</a></li>
+            <li>
+              <a href="#" class="footer__link">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shop By Designer</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section">
+        <h5 class="footer__title">Customer Information</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="../../contacts.html" class="footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Sale Exclusions</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shipping & Returns</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Search</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section footer__connect">
+        <h5 class="footer__title">Connect</h5>
+        <form action="#">
+          <div class="connect">
+            <label for="input-email-footer"></label>
+            <input type="email" id="input-email-footer" placeholder="Email" class="connect__input">
+            <button type="submit" class="button">Join</button>
+
+          </div>
+        </form>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Facebook</title>
+                <use xlink:href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Twitter</title>
+                <use xlink:href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Pinterest</title>
+                <use xlink:href="./img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: instagram</title>
+                <use xlink:href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer__bottom">
+      <fieldset class="rating footer__section">
+        <legend class="rating__caption">Company Rating</legend>
+        <div class="rating__group">
+          <input type="radio" name="star" value="1" aria-label="Ужасно" class="rating__star">
+          <input type="radio" name="star" value="2" aria-label="Сносно" class="rating__star">
+          <input type="radio" name="star" value="3" aria-label="Нормально" class="rating__star">
+          <input type="radio" name="star" value="4" aria-label="Хорошо" class="rating__star">
+          <input type="radio" name="star" value="5" aria-label="Отлично" class="rating__star">
+        </div>
+      </fieldset>
+      <span class="footer__copyright footer__section">Copyright © 2018 Dlk • Design Life Kids</span>
+      <a href="#" class="footer__company footer__section">Web Design — Direct Line Development</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/app.js" defer="defer"></script>
+  </body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Toys - the training page for DLK project</title>
+    <meta name="description" content="The toys have a filter with custom checkboxes, radio buttons and range input, pseudo-elements appear when hovering over a product.">
+    <meta name="keywords" content="Html, scss, checkbox, radio buttons, range input, pseudo-elements, pagination">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.min.css?v=1668496580300">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html" class="logo">
+        <svg class="logo__image">
+          <title>Icon: Logo</title>
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="links-wrapper">
+        <nav class="header__nav header__nav--mobile">
+          <button class="header__link menu-button">Menu</button>
+        </nav>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="../../catalog.html" class="header__link">Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li>
+              <a href="../../blog.html" class="header__link">Blog</a>
+            </li>
+            <li>
+              <a href="../../scene.html" class="header__link">Animation</a>
+            </li>
+            <li>
+              <a href="../../svg.html" class="header__link">SVG</a>
+            </li>
+            <li>
+              <a href="../../grid.html" class="header__link">Grid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <svg class="search__icon" width="24" height="24">
+          <title>Icon: Search</title>
+          <use xlink:href="./img/sprite.svg#search"></use>
+        </svg>
+        <a href="../../contacts.html" class="search__contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<header class="header-menu">
+  <div class="header-menu__overlay"></div>
+  <div class="header-menu__dialog">
+    <div class="container">
+      <div class="header-menu__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
+            <title>Icon: Logo</title>
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="close-button header-menu__close">
+          <svg class="close-button__icon" width="16" height="16">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#dark_close"></use>
+          </svg>
+        </button>
+        <div class="search">
+          <svg class="search__icon" width="24" height="24">
+            <title>Icon: Search</title>
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav header__nav--mobile">
+          <li>
+            <a href="../../catalog.html" class="header__link header__link--shift">Catalog</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">About Us</a>
+          </li>
+          <li>
+            <a href="../../blog.html" class="header__link header__link--shift">Blog</a>
+          </li>
+          <li>
+            <a href="../../scene.html" class="header__link header__link--shift">Animation</a>
+          </li>
+          <li>
+            <a href="../../svg.html" class="header__link header__link--shift">SVG</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">Grid</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="../../contacts.html" class="search__contact--mobile">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="toys">
+        <div class="container">
+          <h1 class="title">Toy for kids</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./catalog.html">Catalog</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./toys.html">Toys</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="filter toys__filter">
+          <div class="container">
+            <form action="#" class="filter-form">
+              <div class="filter-form__cost">
+                <label for="input-cost" class="headline">Cost</label>
+                <input type="range" min="0" max="500" value="100" id="input-cost" class="input-cost styled-slider slider-progress">
+              </div>
+              <div class="filter-form__wrapper">
+                <fieldset class="color filter-form__color">
+                  <legend class="headline">Color</legend>
+                  <ul class="color-list">
+                    <li class="color-list__item">
+                      <input type="checkbox" id="input-black" class="checkbox" checked="checked">
+                      <label for="input-black" class="info">Black</label>
+                    </li>
+                    <li class="color-list__item">
+                      <input type="checkbox" id="input-blue" class="checkbox">
+                      <label for="input-blue" class="info">Blue</label>
+                    </li>
+                    <li class="color-list__item">
+                      <input type="checkbox" id="input-green" class="checkbox">
+                      <label for="input-green" class="info">Green</label>
+                    </li>
+                    <li class="color-list__item">
+                      <input type="checkbox" id="input-white" class="checkbox">
+                      <label for="input-white" class="info">White</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="shipping filter-form__shipping">
+                  <legend class="headline">Delivery</legend>
+                  <ul class="shipping-list">
+                    <li class="shipping-list__item">
+                      <input type="radio" id="input-free" name="shipping" class="radio" checked="checked">
+                      <label for="input-free" class="info">Free shipping</label>
+                    </li>
+                    <li class="shipping-list__item">
+                      <input type="radio" id="input-fast" name="shipping" class="radio">
+                      <label for="input-fast" class="info">Fast shipping</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <fieldset class="amount filter-form__amount">
+                <legend class="headline">Amount</legend>
+                <ul class="amount-list">
+                  <li class="amount-list__item">
+                    <input type="radio" id="input-little" name="amount" class="amount-list__input" checked="checked">
+                    <label for="input-little" class="info amount-list__label">0-5</label>
+                  </li>
+                  <li class="amount-list__item">
+                    <input type="radio" id="input-medium" name="amount" class="amount-list__input">
+                    <label for="input-medium" class="info amount-list__label">10-20</label>
+                  </li>
+                  <li class="amount-list__item">
+                    <input type="radio" id="input-big" name="amount" class="amount-list__input">
+                    <label for="input-big" class="info amount-list__label">20-50</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="button filter-form__button">Apply</button>
+
+            </form>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="product-list">
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/sharky.png, ../img/sharky-2x.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/sharky.png, ../img/sharky-2x.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/sharky.png, ../img/sharky-2x.png 2x" width="380" height="385">
+                <img srcset="../img/sharky.png" alt="Image: Sharky Bean Bag Chair Cover" width="380" height="385">
+              </picture>
+              <h6 class="product-list__title">SHARKY BEAN BAG CHAIR COVER</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/brass.png, ../img/brass-2x.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/brass.png, ../img/brass-2x.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/brass.png, ../img/brass-2x.png 2x" width="380" height="385">
+                <img srcset="../img/brass.png" alt="Image: Brass Deco Frames" width="380" height="385">
+              </picture>
+              <h6 class="product-list__title">BRASS DECO FRAMES</h6>
+              <span class="product-list__price">$66.00 USD</span>
+            </li>
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/cibo.png, ../img/cibo-2x.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/cibo.png, ../img/cibo-2x.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/cibo.png, ../img/cibo-2x.png 2x" width="380" height="385">
+                <img srcset="../img/cibo.png" alt="Image: Cibo Full Apron" width="380" height="385">
+              </picture>
+
+              <h6 class="product-list__title">CIBO FULL APRON</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/gatcha.png, ../img/gatcha-2x.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/gatcha.png, ../img/gatcha-2x.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/gatcha.png, ../img/gatcha-2x.png 2x" width="380" height="385">
+                <img srcset="../img/gatcha.png" alt="Image: Gatcha Gatcha Gumball Machine" width="380" height="385">
+              </picture>
+              <h6 class="product-list__title">GATCHA GATCHA GUMBALL MACHINE</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/christmas.png, ../img/christmas-2x.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/christmas.png, ../img/christmas-2x.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/christmas.png, ../img/christmas-2x.png 2x" width="380" height="385">
+                <img srcset="../img/christmas.png" alt="Image: Christmas Advent Scented Candle" width="380" height="385">
+              </picture>
+              <h6 class="product-list__title">
+                CHRISTMAS ADVENT SCENTED CANDLE
+              </h6>
+              <span class="product-list__price">$29.00 USD</span>
+            </li>
+            <li class="product-list__item">
+              <picture class="product-list__image">
+                <source srcset="../img/tangle.png, ../img/tangle.png 2x" width="160" height="167" media="(max-width: 676px)">
+                <source srcset="../img/tangle.png, ../img/tangle.png 2x" media="(max-width: 768px)" width="203" height="211">
+                <source srcset="../img/tangle.png, ../img/tangle.png 2x" width="380" height="385">
+                <img srcset="../img/tangle.png" alt="Image: Tangle Spinning Tea Light" width="380" height="385">
+              </picture>
+              <h6 class="product-list__title">TANGLE SPINNING TEA LIGHT</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+          </ul>
+          <nav class="pagination">
+  <button class="pagination__button">
+    <svg class="pagination__icon" width="18" height="30">
+      <title>Icon: Arrow Prev</title>
+      <use xlink:href="../img/sprite.svg#arrow_prev"></use>
+    </svg>
+  </button>
+  <ol class="pagination__list">
+    <li>
+      <a href="#" class="pagination__link pagination__link--active">1</a>
+    </li>
+    <li><a href="#" class="pagination__link">2</a></li>
+    <li><a href="#" class="pagination__link">3</a></li>
+    <li><a href="#" class="pagination__link">4</a></li>
+  </ol>
+  <button class="pagination__button">
+    <svg class="pagination__icon" width="18" height="30">
+      <title>Icon: Arrow Next</title>
+      <use xlink:href="../img/sprite.svg#arrow_next"></use>
+    </svg>
+  </button>
+</nav>
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <section class="footer__section">
+        <h5 class="footer__title">Navigation</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li>
+              <a href="#" class="footer__link">Design Services</a>
+            </li>
+            <li><a href="#" class="footer__link">Featured On</a></li>
+            <li>
+              <a href="#" class="footer__link">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shop By Designer</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section">
+        <h5 class="footer__title">Customer Information</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="../../contacts.html" class="footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Sale Exclusions</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shipping & Returns</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Search</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section footer__connect">
+        <h5 class="footer__title">Connect</h5>
+        <form action="#">
+          <div class="connect">
+            <label for="input-email-footer"></label>
+            <input type="email" id="input-email-footer" placeholder="Email" class="connect__input">
+            <button type="submit" class="button">Join</button>
+
+          </div>
+        </form>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Facebook</title>
+                <use xlink:href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Twitter</title>
+                <use xlink:href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Pinterest</title>
+                <use xlink:href="./img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: instagram</title>
+                <use xlink:href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer__bottom">
+      <fieldset class="rating footer__section">
+        <legend class="rating__caption">Company Rating</legend>
+        <div class="rating__group">
+          <input type="radio" name="star" value="1" aria-label="Ужасно" class="rating__star">
+          <input type="radio" name="star" value="2" aria-label="Сносно" class="rating__star">
+          <input type="radio" name="star" value="3" aria-label="Нормально" class="rating__star">
+          <input type="radio" name="star" value="4" aria-label="Хорошо" class="rating__star">
+          <input type="radio" name="star" value="5" aria-label="Отлично" class="rating__star">
+        </div>
+      </fieldset>
+      <span class="footer__copyright footer__section">Copyright © 2018 Dlk • Design Life Kids</span>
+      <a href="#" class="footer__company footer__section">Web Design — Direct Line Development</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/app.js" defer="defer"></script>
+    <script src="js/toys.js" defer="defer"></script>
+  </body>
+</html>

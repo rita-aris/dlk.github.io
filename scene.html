@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Animation scene - the training page for DLK project</title>
+    <meta name="description" content="A scene is implemented on the page using animation and keyframes tages, which is displayed correctly on different screens.">
+    <meta name="keywords" content="Html, scss, animation, keyframes, responsive website">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.min.css?v=1668496580300">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header header--small">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html" class="logo">
+        <svg class="logo__image">
+          <title>Icon: Logo</title>
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="links-wrapper">
+        <nav class="header__nav header__nav--mobile">
+          <button class="header__link menu-button">Menu</button>
+        </nav>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="../../catalog.html" class="header__link">Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li>
+              <a href="../../blog.html" class="header__link">Blog</a>
+            </li>
+            <li>
+              <a href="../../scene.html" class="header__link">Animation</a>
+            </li>
+            <li>
+              <a href="../../svg.html" class="header__link">SVG</a>
+            </li>
+            <li>
+              <a href="../../grid.html" class="header__link">Grid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <svg class="search__icon" width="24" height="24">
+          <title>Icon: Search</title>
+          <use xlink:href="./img/sprite.svg#search"></use>
+        </svg>
+        <a href="../../contacts.html" class="search__contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<header class="header-menu">
+  <div class="header-menu__overlay"></div>
+  <div class="header-menu__dialog">
+    <div class="container">
+      <div class="header-menu__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
+            <title>Icon: Logo</title>
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="close-button header-menu__close">
+          <svg class="close-button__icon" width="16" height="16">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#dark_close"></use>
+          </svg>
+        </button>
+        <div class="search">
+          <svg class="search__icon" width="24" height="24">
+            <title>Icon: Search</title>
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav header__nav--mobile">
+          <li>
+            <a href="../../catalog.html" class="header__link header__link--shift">Catalog</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">About Us</a>
+          </li>
+          <li>
+            <a href="../../blog.html" class="header__link header__link--shift">Blog</a>
+          </li>
+          <li>
+            <a href="../../scene.html" class="header__link header__link--shift">Animation</a>
+          </li>
+          <li>
+            <a href="../../svg.html" class="header__link header__link--shift">SVG</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">Grid</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="../../contacts.html" class="search__contact--mobile">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="scene">
+        <div class="container">
+          <h1 class="title">Animation scene</h1>
+          <nav class="breadcrumbs breadcrumbs--small">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./scene.html">Animation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="scene__wrapper">
+  <img src="./img/sky.png" alt="Image: Clouds and sun" class="scene__sky">
+  <img src="./img/city.png" alt="Image: City" class="scene__city">
+  <img src="./img/highway.png" alt="Image: Highway" class="scene__highway">
+  <img src="./img/lanterns.png" alt="Image: Lanterns" class="scene__lanterns-1 scale" width="151" height="395">
+  <img src="./img/lanterns.png" alt="Image: Lanterns" class="scene__lanterns-2 scale" width="151" height="395">
+  <img src="./img/lantern.png" alt="Image: Lantern" class="scene__lantern scale" width="214" height="562">
+  <img src="./img/woman.png" alt="Image: Woman" class="scene__woman scale" width="98" height="267">
+  <img src="./img/suitcases.png" alt="Image: Suitcases" class="scene__suitcases scale" width="191" height="95">
+  <img src="./img/man.png" alt="Image: Man" class="scene__man scale" width="205" height="353">
+  <img src="./img/man_hand.png" alt="Image: Man's hand" class="scene__man-hand" width="89" height="128">
+  <img src="./img/woman_hand.png" alt="Image: Woman's hand" class="scene__woman-hand" width="63" height="44">
+  <img src="./img/car_4.png" alt="Image: Car 4" class="scene__car-4" width="268" height="126">
+  <img src="./img/car_3.png" alt="Image: Car 3" class="scene__car-3" width="246" height="65">
+  <img src="./img/car_2.png" alt="Image: Car 2" class="scene__car-2" width="203" height="96">
+  <img src="./img/car_1.png" alt="Image: Car 1" class="scene__car-1" width="251" height="99">
+  <img src="./img/message_1.png" alt="Image: Message 1" class="scene__message-1 scale" width="161" height="99">
+  <img src="./img/message_2.png" alt="Image: Message 2" class="scene__message-2 scale" width="160" height="77">
+  <img src="./img/taxi.png" alt="Image: Taxi" class="scene__taxi" width="886" height="266">
+  <img src="./img/message_3.png" alt="Image: Message 3" class="scene__message-3 scale" width="161" height="99">
+  <img src="./img/message_4.png" alt="Image: Message 4" class="scene__message-4 scale" width="160" height="77">
+</div>
+
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <section class="footer__section">
+        <h5 class="footer__title">Navigation</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li>
+              <a href="#" class="footer__link">Design Services</a>
+            </li>
+            <li><a href="#" class="footer__link">Featured On</a></li>
+            <li>
+              <a href="#" class="footer__link">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shop By Designer</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section">
+        <h5 class="footer__title">Customer Information</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="../../contacts.html" class="footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Sale Exclusions</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shipping & Returns</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Search</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section footer__connect">
+        <h5 class="footer__title">Connect</h5>
+        <form action="#">
+          <div class="connect">
+            <label for="input-email-footer"></label>
+            <input type="email" id="input-email-footer" placeholder="Email" class="connect__input">
+            <button type="submit" class="button">Join</button>
+
+          </div>
+        </form>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Facebook</title>
+                <use xlink:href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Twitter</title>
+                <use xlink:href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Pinterest</title>
+                <use xlink:href="./img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: instagram</title>
+                <use xlink:href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer__bottom">
+      <fieldset class="rating footer__section">
+        <legend class="rating__caption">Company Rating</legend>
+        <div class="rating__group">
+          <input type="radio" name="star" value="1" aria-label="Ужасно" class="rating__star">
+          <input type="radio" name="star" value="2" aria-label="Сносно" class="rating__star">
+          <input type="radio" name="star" value="3" aria-label="Нормально" class="rating__star">
+          <input type="radio" name="star" value="4" aria-label="Хорошо" class="rating__star">
+          <input type="radio" name="star" value="5" aria-label="Отлично" class="rating__star">
+        </div>
+      </fieldset>
+      <span class="footer__copyright footer__section">Copyright © 2018 Dlk • Design Life Kids</span>
+      <a href="#" class="footer__company footer__section">Web Design — Direct Line Development</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/app.js" defer="defer"></script>
+    <script src="js/index.js" defer="defer"></script>
+  </body>
+</html>

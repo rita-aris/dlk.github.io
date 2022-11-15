@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DLK - training project on layout in Togliatti</title>
+    <meta name="description" content="The project was completed by the student independently with the help of HTML and SCSS technology, also used Flexbox, Grid, JavaScript and Gulp.">
+    <meta name="keywords" content="Frontend, html, css, scss, perfect pixel, js, gulp, svg, animation">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.min.css?v=1668496580300">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="./audio/audio.mp3" type="audio/mpeg">
+      Тег audio не поддерживается вашим браузером.
+    </audio>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html" class="logo">
+        <svg class="logo__image">
+          <title>Icon: Logo</title>
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="links-wrapper">
+        <nav class="header__nav header__nav--mobile">
+          <button class="header__link menu-button">Menu</button>
+        </nav>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="../../catalog.html" class="header__link">Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li>
+              <a href="../../blog.html" class="header__link">Blog</a>
+            </li>
+            <li>
+              <a href="../../scene.html" class="header__link">Animation</a>
+            </li>
+            <li>
+              <a href="../../svg.html" class="header__link">SVG</a>
+            </li>
+            <li>
+              <a href="../../grid.html" class="header__link">Grid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <svg class="search__icon" width="24" height="24">
+          <title>Icon: Search</title>
+          <use xlink:href="./img/sprite.svg#search"></use>
+        </svg>
+        <a href="../../contacts.html" class="search__contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<header class="header-menu">
+  <div class="header-menu__overlay"></div>
+  <div class="header-menu__dialog">
+    <div class="container">
+      <div class="header-menu__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
+            <title>Icon: Logo</title>
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="close-button header-menu__close">
+          <svg class="close-button__icon" width="16" height="16">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#dark_close"></use>
+          </svg>
+        </button>
+        <div class="search">
+          <svg class="search__icon" width="24" height="24">
+            <title>Icon: Search</title>
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav header__nav--mobile">
+          <li>
+            <a href="../../catalog.html" class="header__link header__link--shift">Catalog</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">About Us</a>
+          </li>
+          <li>
+            <a href="../../blog.html" class="header__link header__link--shift">Blog</a>
+          </li>
+          <li>
+            <a href="../../scene.html" class="header__link header__link--shift">Animation</a>
+          </li>
+          <li>
+            <a href="../../svg.html" class="header__link header__link--shift">SVG</a>
+          </li>
+          <li>
+            <a href="#" class="header__link header__link--shift">Grid</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="../../contacts.html" class="search__contact--mobile">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="main">
+        <div class="container container-column container--responsive">
+          <div class="main__background">
+            <div class="main__count">
+              <span class="count">01</span>
+              <div class="control main__control">
+                <button class="control__button">
+                  <span class="control__line control__line--checked"></span>
+                </button>
+                <button class="control__button">
+                  <span class="control__line"></span>
+                </button>
+                <button class="control__button">
+                  <span class="control__line"></span>
+                </button>
+                <button class="control__button">
+                  <span class="control__line"></span>
+                </button>
+              </div>
+            </div>
+            <div class="main__info">
+              <h1 class="title main__title">THE OOH NOO COLLECTION</h1>
+              <span class="main__designed">Designed in Slovenia</span>
+              <button type="button" class="button popup-button">EXPLORE NOW</button>
+
+            </div>
+          </div>
+          <p class="main__offer">
+            Free (continental) USA shipping on all orders of $100 USD or more!
+          </p>
+          <picture class="main__banner">
+            <source srcset="./img/monster.png, ./img/monster-2x.png 2x" width="292" height="226" media="(max-width: 676px)">
+            <source srcset="./img/monster.png, ./img/monster-2x.png 2x" media="(max-width: 1200px)" width="385" height="286">
+            <source srcset="./img/monster.png, ./img/monster-2x.png 2x" width="636" height="490">
+            <img srcset="./img/monster.png" alt="Image: Monster" width="636" height="490">
+          </picture>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <h2 class="subtitle">Category Products</h2>
+          <ul class="category-list category__list">
+            <li class="category-list__item category__item">
+              <picture class="category-list__image">
+                <source srcset="./img/apparel_kids.jpg, ./img/apparel_kids-2x.jpg 2x" width="247" height="238" media="(max-width: 676px)">
+                <source srcset="./img/apparel_kids.jpg, ./img/apparel_kids-2x.jpg 2x" media="(max-width: 992px)" width="258" height="249">
+                <source srcset="./img/apparel_kids.jpg, ./img/apparel_kids-2x.jpg 2x" width="280" height="270">
+                <img srcset="./img/apparel_kids.jpg" alt="Image: Apparel Kids" width="280" height="270">
+              </picture>
+              <a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
+            </li>
+            <li class="category-list__item category__item category__item--cutted-too">
+              <picture class="category-list__image">
+                <source srcset="./img/holiday_shop.jpg, ./img/holiday_shop-2x.jpg 2x" width="247" height="238" media="(max-width: 676px)">
+                <source srcset="./img/holiday_shop.jpg, ./img/holiday_shop-2x.jpg 2x" media="(max-width: 992px)" width="258" height="249">
+                <source srcset="./img/holiday_shop.jpg, ./img/holiday_shop-2x.jpg 2x" width="280" height="270">
+                <img srcset="./img/holiday_shop.jpg" alt="Image: Holiday Shop" width="280" height="270">
+              </picture>
+              <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
+            </li>
+            <li class="category-list__item category__item category__item--cutted">
+              <picture class="category-list__image">
+                <source srcset="./img/toys.jpg, ./img/toys-2x.jpg 2x" width="247" height="238" media="(max-width: 676px)">
+                <source srcset="./img/toys.jpg, ./img/toys-2x.jpg 2x" media="(max-width: 992px)" width="258" height="249">
+                <source srcset="./img/toys.jpg, ./img/toys-2x.jpg 2x" width="280" height="270">
+                <img srcset="./img/toys.jpg" alt="Image: Toys" width="280" height="270">
+              </picture>
+              <a href="toys.html"> <h4 class="groups">Toys</h4></a>
+            </li>
+            <li class="category-list__item category__item">
+              <picture class="category-list__image">
+                <source srcset="./img/accessories.jpg, ./img/accessories-2x.jpg 2x" width="247" height="238" media="(max-width: 676px)">
+                <source srcset="./img/accessories.jpg, ./img/accessories-2x.jpg 2x" media="(max-width: 992px)" width="258" height="249">
+                <source srcset="./img/accessories.jpg, ./img/accessories-2x.jpg 2x" width="280" height="270">
+                <img srcset="./img/accessories.jpg" alt="Image: Accessories" width="280" height="270">
+              </picture>
+              <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
+            </li>
+          </ul>
+          <div class="category__arrows">
+            <div class="arrows">
+              <button class="arrows__button">
+                <svg class="arrows__icon" width="18" height="30">
+                  <title>Icon: Arrow Prev</title>
+                  <use xlink:href="./img/sprite.svg#arrow_prev"></use>
+                </svg></button><button class="arrows__button">
+                <svg class="arrows__icon" width="18" height="30">
+                  <title>Icon: Arrow Next</title>
+                  <use xlink:href="./img/sprite.svg#arrow_next"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="info">
+              Modern finds for the modern home. Curated goods by unique
+              designers around the world from fashion to furniture for kids and
+              adults.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery__wrapper">
+            <picture class="delivery__image">
+              <source srcset="./img/delivery_mobile.jpg, ./img/delivery_mobile-2x.jpg 2x" width="335" height="357" media="(max-width: 676px)">
+              <source srcset="./img/delivery_tablet.jpg, ./img/delivery_tablet-2x.jpg 2x" media="(max-width: 992px)" width="258" height="512">
+              <source srcset="./img/delivery.jpg, ./img/delivery-2x.jpg 2x" width="480" height="559">
+              <img srcset="./img/delivery.jpg" alt="Image: Delivery" width="480" height="559">
+            </picture>
+            <div class="delivery__info">
+              <h2 class="subtitle">Delivery</h2>
+              <ul class="delivery__list">
+                <li>
+                  <h3 class="italic delivery__title delivery__title--checked">
+                    Delivery
+                  </h3>
+                </li>
+                <li>
+                  <h3 class="italic delivery__title">Guarantee</h3>
+                </li>
+                <li>
+                  <h3 class="italic delivery__title">Credit</h3>
+                </li>
+              </ul>
+              <div class="delivery__text">
+                <p class="info">
+                  Some days i feel like i've been working on dlk my entire life
+                  and there are other days that i am completely shocked that
+                  four years have flown by. It's simply magical.
+                </p>
+                <p class="info">
+                  What started as an outlet to deal with the traumatic loss of
+                  my husband, dlk has now become a truly happy place for me and
+                  i have you and all of the beautiful designers that we work
+                  with to thank!
+                </p>
+              </div>
+              <a href="#" class="button">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="awards">
+        <div class="container">
+          <h2 class="hidden">Awards</h2>
+          <ul class="awards-list">
+            <li class="awards__mail">
+              <picture>
+                <source srcset="./img/mailru.png, ./img/mailru-2x.png 2x" width="131" height="42" media="(max-width: 676px)">
+                <source srcset="./img/mailru.png, ./img/mailru-2x.png 2x" media="(max-width: 992px)" width="106" height="33">
+                <source srcset="./img/mailru.png, ./img/mailru-2x.png 2x" width="193" height="60">
+                <img srcset="./img/mailru.png" alt="Image: Mail Ru" width="193" height="60">
+              </picture>
+            </li>
+            <li class="awards__apple">
+              <picture>
+                <source srcset="./img/apple.png, ./img/apple-2x.png 2x" width="109" height="38" media="(max-width: 676px)">
+                <source srcset="./img/apple.png, ./img/apple-2x.png 2x" media="(max-width: 992px)" width="98" height="34">
+                <source srcset="./img/apple.png, ./img/apple-2x.png 2x" width="179" height="61">
+                <img srcset="./img/apple.png" alt="Image: Apple" width="179" height="61">
+              </picture>
+            </li>
+            <li class="awards__eltex">
+              <picture>
+                <source srcset="./img/eltex.png, ./img/eltex-2x.png 2x" width="149" height="32" media="(max-width: 676px)">
+                <source srcset="./img/eltex.png, ./img/eltex-2x.png 2x" media="(max-width: 992px)" width="119" height="25">
+                <source srcset="./img/eltex.png, ./img/eltex-2x.png 2x" width="216" height="46">
+                <img srcset="./img/eltex.png" alt="Image: Eltex" width="216" height="46">
+              </picture>
+            </li>
+            <li class="awards__owox">
+              <picture>
+                <source srcset="./img/owox.png, ./img/owox-2x.png 2x" width="143" height="26" media="(max-width: 676px)">
+                <source srcset="./img/owox.png, ./img/owox-2x.png 2x" media="(max-width: 992px)" width="116" height="22">
+                <source srcset="./img/owox.png, ./img/owox-2x.png 2x" width="211" height="40">
+                <img srcset="./img/eltex.png" alt="Image: Owox" width="211" height="40">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container container--responsive">
+        <div class="about-wrapper">
+          <section class="design">
+            <h2 class="subtitle subtitle--up">Design Life Kids</h2>
+            <span class="italic design__title">About Us</span>
+            <p class="info design__info">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </p>
+            <a href="#" class="button">buy now</a>
+          </section>
+          <section class="contact">
+            <div class="contact__block">
+              <h2 class="subtitle subtitle--up">Contacts</h2>
+              <p class="info contact__info">
+                Some days i feel like i've been working on dlk my entire life
+                and there are other days that i am completely shocked that four
+                years have flown by. It's simply magical.
+              </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5508789216715!2d49.288043615981344!3d53.51221786997473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1661177956763!5m2!1sru!2sru" width="483" height="196" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <section class="footer__section">
+        <h5 class="footer__title">Navigation</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li>
+              <a href="#" class="footer__link">Design Services</a>
+            </li>
+            <li><a href="#" class="footer__link">Featured On</a></li>
+            <li>
+              <a href="#" class="footer__link">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shop By Designer</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section">
+        <h5 class="footer__title">Customer Information</h5>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="../../contacts.html" class="footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Sale Exclusions</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shipping & Returns</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Search</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__section footer__connect">
+        <h5 class="footer__title">Connect</h5>
+        <form action="#">
+          <div class="connect">
+            <label for="input-email-footer"></label>
+            <input type="email" id="input-email-footer" placeholder="Email" class="connect__input">
+            <button type="submit" class="button">Join</button>
+
+          </div>
+        </form>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Facebook</title>
+                <use xlink:href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Twitter</title>
+                <use xlink:href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: Pinterest</title>
+                <use xlink:href="./img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+              <svg class="social-list__icon" width="30" height="30">
+                <title>Icon: instagram</title>
+                <use xlink:href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer__bottom">
+      <fieldset class="rating footer__section">
+        <legend class="rating__caption">Company Rating</legend>
+        <div class="rating__group">
+          <input type="radio" name="star" value="1" aria-label="Ужасно" class="rating__star">
+          <input type="radio" name="star" value="2" aria-label="Сносно" class="rating__star">
+          <input type="radio" name="star" value="3" aria-label="Нормально" class="rating__star">
+          <input type="radio" name="star" value="4" aria-label="Хорошо" class="rating__star">
+          <input type="radio" name="star" value="5" aria-label="Отлично" class="rating__star">
+        </div>
+      </fieldset>
+      <span class="footer__copyright footer__section">Copyright © 2018 Dlk • Design Life Kids</span>
+      <a href="#" class="footer__company footer__section">Web Design — Direct Line Development</a>
+    </div>
+  </div>
+</footer>
+
+    <section class="popup">
+      <h1 class="hidden">EXPLORE NOW</h1>
+      
+      <div class="popup__overlay"></div>
+      
+      <div class="popup__dialog">
+        <button class="close-button popup__close">
+          <svg class="close-button__icon" width="15" height="15">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form action="#" class="form">
+  <div class="form__wrapper">
+    <div>
+      <label for="input-name" class="form__label form__label--margin">Name</label>
+      <input type="text" id="input-name" placeholder="Ivan Ivanov" class="form__input form__name">
+    </div>
+    <div class="form__phone-email">
+      <div class="form__row">
+        <label for="input-phone" class="form__label form__label--margin">Phone</label>
+        <input type="tel" id="input-phone" class="form__input form__phone">
+      </div>
+      <div class="form__row">
+        <label for="input-email" class="form__label form__label--margin">Email</label>
+        <input type="email" id="input-email" class="form__input form__email">
+      </div>
+    </div>
+    <div>
+      <label for="input-message" class="form__label form__label--margin">Message</label>
+      <textarea id="input-message" class="form__input form__message"></textarea>
+    </div>
+    <div class="form__personal">
+      <input type="checkbox" class="form__input checkbox" id="input-personal" checked="checked">
+      <label for="input-personal" class="form__label form__label--mini">By clicking on the button, you consent to the processing of your
+        personal data</label>
+    </div>
+    <button type="submit" class="button">Submit</button>
+
+  </div>
+</form>
+
+      </div>
+    </section>
+
+    <script src="js/app.js" defer="defer"></script>
+    <script src="js/index.js" defer="defer"></script>
+  </body>
+</html>
